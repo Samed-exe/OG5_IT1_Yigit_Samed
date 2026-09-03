@@ -26,24 +26,31 @@ public class TaschenrechnerTest {
 		System.out.print(" Select option: ");
 		swValue = myScanner.next().charAt(0);
 
+		
+		System.out.println("Bitte erste Zahl eingeben:");
+		double zahl1 = myScanner.nextDouble();
+		System.out.println("Bitte zweite Zahl eingeben:");
+		double zahl2 = myScanner.nextDouble();
+		
+		
 		// Switch construct
 		switch (swValue) {
 		case '1':
-			System.out.println("4 + 5 = " + ts.add(4, 5));
+			System.out.println(zahl1 +  "+" + zahl2 + "="  + ts.add(zahl1, zahl2));
 			break;
 			
 			
 		  //  add your code here
 		case '2':
-			System.out.println("4 - 5 =" + ts.sub(4, 5));
+			System.out.println(zahl1 +  "-" + zahl2 + "="  + ts.sub(zahl1, zahl2));
 		  break;
 		  
 		case '3':
-			System.out.println("4 * 5 =" + ts.mul(4, 5));
+			System.out.println(zahl1 +  "*" + zahl2 + "="  + ts.mul(zahl1, zahl2));
 		  break;
 		  
 		case '4':
-			System.out.println("4 / 5 =" + ts.div(4, 5));
+			System.out.println(zahl1 +  "/" + zahl2 + "="  + ts.div(zahl1, zahl2));
 		  break;
 		  
 		case '5':
