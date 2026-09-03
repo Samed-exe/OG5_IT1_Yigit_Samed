@@ -8,14 +8,17 @@ public class Taschenrechner {
 	
 	public double sub(double zahl1, double zahl2){
 		// has to be implemented
+		return zahl1 - zahl2;
 	}
 	
 	public double mul(double zahl1, double zahl2){
 		// has to be implemented
+		return zahl1*zahl2;
 	}
 
 	public double div(double zahl1, double zahl2){
 		// has to be implemented
+		return zahl1/zahl2;
 	}
 	
 }
