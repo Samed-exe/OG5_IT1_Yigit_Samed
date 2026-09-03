@@ -36,6 +36,19 @@ public class TaschenrechnerTest {
 		  //  add your code here
 		case '2':
 			System.out.println("4 - 5 =" + ts.sub(4, 5));
+		  break;
+		  
+		case '3':
+			System.out.println("4 * 5 =" + ts.mul(4, 5));
+		  break;
+		  
+		case '4':
+			System.out.println("4 / 5 =" + ts.div(4, 5));
+		  break;
+		  
+		case '5':
+			System.out.println("Tschüssi");
+		  break;
 		  
 		default:
 			System.out.println("Invalid selection");
