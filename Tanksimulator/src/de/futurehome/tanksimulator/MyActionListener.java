@@ -10,11 +10,11 @@ public class MyActionListener implements ActionListener {
 	}
 
 	public void actionPerformed(ActionEvent e) {
-		Object obj = e.getSource();
+	Object obj = e.getSource();
 		if (obj == f.btnBeenden)
 			System.exit(0);
 		
-		if (obj == f.btnEinfuellen) {
+		if (obj == f.btnEinfuellen && f.myTank.getFuellstand() < 200) {
 			 double fuellstand = f.myTank.getFuellstand();
 			 fuellstand = fuellstand + 5;
 			 f.myTank.setFuellstand(fuellstand);
@@ -23,7 +23,8 @@ public class MyActionListener implements ActionListener {
 			 
 		
 		}
-			if (obj == f.btnVerbrauchen) {
+		
+			if (obj == f.btnVerbrauchen && f.myTank.getFuellstand() > 0) {
 				double fuellstand = f.myTank.getFuellstand();
 				fuellstand = fuellstand - 2;
 				f.myTank.setFuellstand(fuellstand);
