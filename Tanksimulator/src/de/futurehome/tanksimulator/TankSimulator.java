@@ -17,8 +17,9 @@ public class TankSimulator extends Frame {
 	public  Label lblFuellstand = new Label("     ");
 	
 	public Button btnBeenden = new Button("Beenden");
-	public Button btnEinfuellen = new Button("Einf�llen");
+	public Button btnEinfuellen = new Button("Einfüllen");
 	public Button btnVerbrauchen = new Button("Verbrauchen");
+
 	
 	private Panel pnlNorth = new Panel();
 	private Panel pnlCenter = new Panel(new FlowLayout());
