@@ -6,23 +6,15 @@ package de.oszimt.starsim2099;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Planet {
+public class Planet extends Himmelskoerper {
 
 	// Attribute
-	private String name;
+	
 	private int anzahlHafen;
-	private double posX;
-	private double posY;
+	
 	// Methoden
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
+	
 	public int getAnzahlHafen() {
 		return anzahlHafen;
 	}
@@ -31,21 +23,7 @@ public class Planet {
 		this.anzahlHafen = anzahlHafen;
 	}
 
-	public double getPosX() {
-		return posX;
-	}
 
-	public void setPosX(double posX) {
-		this.posX = posX;
-	}
-
-	public double getPosY() {
-		return posY;
-	}
-
-	public void setPosY(double posY) {
-		this.posY = posY;
-	}
 
 	// Darstellung
 	public static char[][] getDarstellung() {

@@ -8,11 +8,14 @@ package de.oszimt.starsim2099;
  */
 public class Ladung {
 
+	
+	
 	// Attribute
 	private String typ;
 	private int masse;
 	private double posX;
 	private double posY;
+	
 	// Methoden
 
 
@@ -39,7 +42,7 @@ public class Ladung {
 	}
 
 
-
+	
 	public double getPosX() {
 		return posX;
 	}
@@ -61,12 +64,13 @@ public class Ladung {
 	public void setPosY(double posY) {
 		this.posY = posY;
 	}
-}
-	
+
+
+
 	// Darstellung
 	public static char[][] getDarstellung() {
 		char[][] ladungShape = { { '/', 'X', '\\' }, { '|', 'X', '|' }, { '\\', 'X', '/' } };
 		return ladungShape;
 	}
-
+}
 
