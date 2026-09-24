@@ -16,4 +16,12 @@ public class Mond extends Himmelskoerper{
 		this.erzArt = erzArt;
 	}
 	
+	// Darstellung
+		public static char[][] getDarstellung() {
+			char[][] planetShape = { { '\0', '/', '*', '*', '\\', '\0' }, { '|', '*', '*', '*', '*', '|' },
+					{ '\0', '\\', '*', '*', '/', '\0' } };
+			return planetShape;
+
+		}
+	
 }
