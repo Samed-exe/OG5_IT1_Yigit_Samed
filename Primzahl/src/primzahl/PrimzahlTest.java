@@ -1,29 +1,43 @@
 package primzahl;
+import java.util.Scanner;
 
 public class PrimzahlTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		Scanner scan = new Scanner(System.in);
+		
 		while(true) {
-			isPrim();
+			System.out.println("Geben sie eine zahl ein:");
+			int zahl = scan.nextInt();
+			
+			if (isPrim(zahl) == true) {
+				System.out.println(zahl + " ist eine Primzahl.");
+			} else {
+				System.out.println(zahl + " ist keine Primzahl.");
+			}
 		}
-
+		
 
 		
 
 
 
 	}
-	public static boolean isPrim(){
-		int zahl1 = scan.nextInt();
-		for (int i = 2; i<zahl1 ; i++ ) {
-			if(zahl1%i != 0);
-			istPrimzahl = false;
+	public static boolean isPrim(int zahl){
+	
+		if (zahl < 2) {
+			return false;
 		}
-		return istPrimzahl;
+		
+		for (int i = 2; i<zahl ; i++ ) {
+			if(zahl % i == 0) {
+			return false;
+		}
+	
 	}
-
+		return true;
+	}
 }
 	
 
