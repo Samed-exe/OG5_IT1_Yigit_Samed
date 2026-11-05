@@ -10,12 +10,15 @@ public class PrimzahlTest {
 		while(true) {
 			System.out.println("Geben sie eine zahl ein:");
 			int zahl = scan.nextInt();
-			
+			long start = System.currentTimeMillis();
 			if (isPrim(zahl) == true) {
 				System.out.println(zahl + " ist eine Primzahl.");
 			} else {
 				System.out.println(zahl + " ist keine Primzahl.");
 			}
+			long stop = System.currentTimeMillis();
+			long Laufzeit = stop - start;
+			System.out.println("Die Zeit beträgt: " + Laufzeit);
 		}
 		
 
@@ -36,6 +39,7 @@ public class PrimzahlTest {
 		}
 	
 	}
+		
 		return true;
 	}
 }
